@@ -12,6 +12,7 @@ const PointHistory = require("./models/PointHistory");
 const { initializeUsers } = require("./utils/initializeData");
 
 const app = express();
+app.set('trust proxy', 1); // trust first proxy
 const server = http.createServer(app);
 
 // Configure CORS origins based on environment
