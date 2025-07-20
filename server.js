@@ -17,7 +17,7 @@ const server = http.createServer(app);
 // Configure CORS origins based on environment
 const allowedOrigins =
   process.env.NODE_ENV === "production"
-    ? [process.env.FRONTEND_URL, "https://your-app-name.netlify.app"]
+    ? [process.env.FRONTEND_URL, "https://leaderboard-frontend01.netlify.app/"]
     : ["http://localhost:3000"];
 
 const io = socketIo(server, {
